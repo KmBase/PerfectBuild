@@ -1,4 +1,4 @@
-# Project Name: [PerfectBuild]
+# PerfectBuild
 
  一、项目概述
 这是一个用于构建应用程序的 Python 脚本，支持使用 Nuitka 和 Pyinstaller 进行构建，并能够为 Windows 系统创建安装程序和便携式压缩包。
