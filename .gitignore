@@ -1,7 +1,9 @@
-build\
-release\
-venv\
-.vscode\
-.idea\
-.pytest_cache
-__pycache__\
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+##
+venv/
+build/
+release/
