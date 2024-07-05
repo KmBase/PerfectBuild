@@ -10,15 +10,16 @@
    - `subprocess.call(['pip', 'install', '-U', 'nuitka'])`
    - `subprocess.call(['pip', 'install', '-U', 'pyinstaller'])`
 
- 三、主要函数和类
-1. `generate_new_id(mode=True)`: 用于生成新的应用UUID，应用更新时请不要修改UUID。
-2. `PerfectBuild` 类:
-    - `__init__`: 初始化构建所需的变量，包括系统信息、配置信息等。
-    - `nbuild`: 使用 Nuitka 进行构建。
-    - `pbuild`: 使用 Pyinstaller 进行构建。
-    - `create_setup`: 创建 Windows 安装程序。
-    - `update_iss`: 更新安装脚本模板。
-    - `create_portable`: 创建便携式压缩包。
+ 三、主要文件
+1. `build.py`: 核心脚本
+    - `generate_new_id(mode=True)`: 用于生成新的应用UUID，应用更新时请不要修改UUID。
+    - `PerfectBuild` 类:
+        - `__init__`: 初始化构建所需的变量，包括系统信息、配置信息等。
+        - `nbuild`: 使用 Nuitka 进行构建。
+        - `pbuild`: 使用 Pyinstaller 进行构建。
+        - `create_setup`: 创建 Windows 安装程序。
+        - `update_iss`: 更新安装脚本模板。
+        - `create_portable`: 创建便携式压缩包。
 3. `perfect_build`: 示例主程序。
     请根据需求修改主程序。
     主程序需包含Config对象：
