@@ -32,6 +32,9 @@
         app_icon = "icon/icon.ico"
         app_dir = app_dir()
     ```
+4. `perfect_build.spec`:pyinstaller自动生成配置文件
+5. `nuitka-setup-template.iss`:Inno Setup模板文件
+
 
  四、主函数 `main`
 根据命令行参数决定构建方式（Nuitka 或 Pyinstaller），并执行相应的构建操作。
