@@ -1,16 +1,16 @@
 # PerfectBuild
 
- 一、项目概述
+## 一、项目概述
 这是一个用于构建应用程序的 Python 脚本，支持使用 Nuitka 和 Pyinstaller 进行构建，并能够为 Windows 系统创建安装程序和便携式压缩包。
 
- 二、使用前准备
+## 二、使用前准备
 1. 需先安装 Inno Setup。
 2. 确保已安装所需的依赖，如通过执行以下命令安装：
    - `subprocess.call(['pip', 'install', '-r', 'environments.txt'])`
    - `subprocess.call(['pip', 'install', '-U', 'nuitka'])`
    - `subprocess.call(['pip', 'install', '-U', 'pyinstaller'])`
 
- 三、主要文件
+## 三、主要文件
 1. `build.py`: 核心脚本
     - `generate_new_id(mode=True)`: 用于生成新的应用UUID，应用更新时请不要修改UUID。
     - `PerfectBuild` 类:
@@ -41,6 +41,6 @@
 4. `perfect_build.spec`:pyinstaller自动生成配置文件
 5. `nuitka-setup-template.iss`:Inno Setup模板文件
 
- 六、注意事项
+## 四、注意事项
 1. 应用更新时请不要修改 `app_id`。
 2. 构建过程中如果出现错误，会抛出相应的异常。
