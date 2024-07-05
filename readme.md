@@ -20,6 +20,11 @@
         - `create_setup`: 创建 Windows 安装程序。
         - `update_iss`: 更新安装脚本模板。
         - `create_portable`: 创建便携式压缩包。
+    - `main`=:主函数,根据命令行参数决定构建方式（Nuitka 或 Pyinstaller），并执行相应的构建操作。
+    - 命令行参数
+        - `--n`: 使用 Nuitka 进行构建。
+        - `--p`: 使用 Pyinstaller 进行构建。
+        - `--g`: 生成新的应用 ID。
 3. `perfect_build`: 示例主程序。
     请根据需求修改主程序。
     主程序需包含Config对象：
@@ -35,15 +40,6 @@
     ```
 4. `perfect_build.spec`:pyinstaller自动生成配置文件
 5. `nuitka-setup-template.iss`:Inno Setup模板文件
-
-
- 四、主函数 `main`
-根据命令行参数决定构建方式（Nuitka 或 Pyinstaller），并执行相应的构建操作。
-
- 五、命令行参数
-1. `--n`: 使用 Nuitka 进行构建。
-2. `--p`: 使用 Pyinstaller 进行构建。
-3. `--g`: 生成新的应用 ID。
 
  六、注意事项
 1. 应用更新时请不要修改 `app_id`。
