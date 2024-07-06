@@ -10,7 +10,7 @@
    - `subprocess.call(['pip', 'install', '-U', 'nuitka'])`
    - `subprocess.call(['pip', 'install', '-U', 'pyinstaller'])`
 
-## 三、主要文件
+## 三、文件说明
 1. `build.py`: 核心脚本
     - `generate_new_id(mode=True)`: 用于生成新的应用UUID，应用更新时请不要修改UUID。
     - `PerfectBuild` 类:
@@ -41,6 +41,13 @@
 4. `perfect_build.spec`:pyinstaller自动生成配置文件
 5. `nuitka-setup-template.iss`:Inno Setup模板文件
 
-## 四、注意事项
+## 四、使用方法
+- `git clone https://github.com/KmBase/PerfectBuild.git`
+- `cd PerfectBuild`
+- 安装依赖
+- `python build.py`或`python build.py --n`
+
+
+## 五、注意事项
 1. 应用更新时请不要修改 `app_id`。
 2. 构建过程中如果出现错误，会抛出相应的异常。
