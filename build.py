@@ -17,18 +17,16 @@ from zipfile import ZIP_DEFLATED, ZipFile
 from perfect_build import Config
 import uuid
 
+iss_compiler = "D:\\Program Files (x86)\\Inno Setup 6\\Compil32.exe"
+# subprocess.call(['pip', 'install', '-U', 'nuitka'])
+# subprocess.call(['pip', 'install', '-r', 'requirements.txt'])
+# subprocess.call(['pip', 'freeze', '>', 'equirements.txt'])
 
 def generate_new_id(mode):
     if mode:
         print(str(uuid.uuid4()).upper())
     else:
         return "EF37701A-BF20-4C1C-8459-34041F620CFE"
-
-
-iss_compiler = "D:\\Program Files (x86)\\Inno Setup 6\\Compil32.exe"
-# subprocess.call(['pip', 'install', '-U', 'nuitka'])
-# subprocess.call(['pip', 'install', '-r', 'requirements.txt'])
-
 
 class PerfectBuild:
     # 系统信息
